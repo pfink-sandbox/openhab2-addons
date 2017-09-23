@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: SleepIQ Binding
 Bundle-SymbolicName: org.openhab.binding.sleepiq;singleton:=true
 Bundle-Vendor: openHAB
-Bundle-Version: 2.1.0.qualifier
+Bundle-Version: 2.2.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
  lib/provider-gson.jar,
@@ -15,10 +15,11 @@ Import-Package:
  com.google.gson.annotations,
  com.google.gson.reflect,
  com.google.gson.stream,
- javax.ws.rs.ext,
  javax.ws.rs.client,
  javax.ws.rs.core,
+ javax.ws.rs.ext,
  org.apache.commons.lang,
+ org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.smarthome.config.core,
  org.eclipse.smarthome.config.core.status,
  org.eclipse.smarthome.config.discovery,

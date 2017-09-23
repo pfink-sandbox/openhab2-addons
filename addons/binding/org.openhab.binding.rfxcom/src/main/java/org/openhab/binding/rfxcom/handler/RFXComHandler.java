@@ -95,9 +95,6 @@ public class RFXComHandler extends BaseThingHandler implements DeviceMessageList
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void initialize() {
         logger.debug("Initializing thing {}", getThing().getUID());
@@ -242,8 +239,8 @@ public class RFXComHandler extends BaseThingHandler implements DeviceMessageList
                                         updateState(CHANNEL_SHUTTER, message.convertToState(valueSelector));
                                         break;
                                     case SIGNAL_LEVEL:
-                                        updateState(CHANNEL_SIGNAL_LEVEL,
-                                                convertSignalLevelToSystemWideLevel(message.convertToState(valueSelector)));
+                                        updateState(CHANNEL_SIGNAL_LEVEL, convertSignalLevelToSystemWideLevel(
+                                                message.convertToState(valueSelector)));
                                         break;
                                     case STATUS:
                                         updateState(CHANNEL_STATUS, message.convertToState(valueSelector));

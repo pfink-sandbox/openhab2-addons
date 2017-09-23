@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: OneBusAway Binding
 Bundle-SymbolicName: org.openhab.binding.onebusaway;singleton:=true
 Bundle-Vendor: openHAB
-Bundle-Version: 2.1.0.qualifier
+Bundle-Version: 2.2.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .
 Import-Package: 
@@ -12,6 +12,7 @@ Import-Package:
  com.google.gson,
  org.apache.commons.lang,
  org.apache.commons.lang.builder,
+ org.eclipse.jdt.annotation;resolution:=optional,
  org.eclipse.jetty.client,
  org.eclipse.jetty.client.api,
  org.eclipse.jetty.client.util,

@@ -61,9 +61,6 @@ public class IppPrinterHandler extends BaseThingHandler implements DiscoveryList
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void initialize() {
         Configuration config = getThing().getConfiguration();
@@ -119,7 +116,7 @@ public class IppPrinterHandler extends BaseThingHandler implements DiscoveryList
                 }
             }
         };
-        refreshJob = scheduler.scheduleAtFixedRate(runnable, 0, refresh, TimeUnit.SECONDS);
+        refreshJob = scheduler.scheduleWithFixedDelay(runnable, 0, refresh, TimeUnit.SECONDS);
     }
 
     @Override
