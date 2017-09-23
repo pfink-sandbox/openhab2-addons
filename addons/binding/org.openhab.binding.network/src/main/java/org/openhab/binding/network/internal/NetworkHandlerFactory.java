@@ -45,7 +45,7 @@ public class NetworkHandlerFactory extends BaseThingHandlerFactory {
 
     @Deactivate
     protected void deactivate() {
-        super.deactivate(null);
+        //super.deactivate(null);
     }
 
     @Modified
