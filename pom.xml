@@ -75,6 +75,7 @@
     <bnd.exportpackage></bnd.exportpackage>
     <bnd.includeresource></bnd.includeresource>
 
+    <feature.directory>src/main/feature/feature.xml</feature.directory>
   </properties>
 
   <dependencyManagement>
@@ -621,6 +622,7 @@ Import-Package: \\
       </activation>
       <properties>
         <bnd.includeresource>${.}/../../lib/; filter:=*.jar; lib:=true</bnd.includeresource>
+        <feature.directory>../../src/main/feature/feature.xml</feature.directory>
       </properties>
       <build>
         <plugins>
